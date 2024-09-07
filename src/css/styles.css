@@ -22,6 +22,14 @@ body.animado {
     background-color: #E2E8F0; /* Cor de fundo para a animação */
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+ }
+
+::-webkit-scrollbar-thumb {
+    background-color: #2B6CB0;
+ }
+
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem;
