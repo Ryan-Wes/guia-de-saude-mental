@@ -1,0 +1,154 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../img/fundo.jpg);
+    overflow: hidden; /* Remove barras de rolagem */
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Adiciona uma animação de transição suave para o fundo */
+body.animado {
+    background-color: #E2E8F0; /* Cor de fundo para a animação */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem;
+    color: #1e1e1e; /* Cor mais suave */
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative; /* Para posicionar sugestões */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2D3748; /* Cor do texto */
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza as sugestões automáticas */
+#sugestoes {
+    width: 30rem;
+    max-height: 10rem;
+    overflow-y: auto;
+    background-color: #ffffffb1;
+    border: 1px solid #CBD5E0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 3.5rem;
+    z-index: 10;
+}
+
+/* Estiliza cada sugestão automática */
+#sugestoes div {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#sugestoes div:hover {
+    background-color: #ecce6e6e;
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #2B6CB0; /* Cor de fundo tranquila */
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #f5c732;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    background-color: #ffffff00; /* Fundo branco para resultados */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #E2E8F0; /* Cor de fundo suave */
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Adiciona efeito hover aos itens de resultado */
+.item-resultado:hover {
+    transform: scale(1.02);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #2D3748;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    color: #2B6CB0;
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #4A5568;
+    margin: 0.5rem 0;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F7FAFC;
+    color: #4A5568;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    height: 57px;
+}
