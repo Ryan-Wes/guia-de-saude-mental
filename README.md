@@ -2,6 +2,8 @@
 
 Este projeto permite que você pesquise soluções para sentimentos específicos e acesse links úteis para lidar com esses estados emocionais. Além disso, oferece um áudio relaxante para ajudar a melhorar o bem-estar do usuário.
 
+Se você gostou desse projeto e ESTÁ PARTICIPANDO da imersão, por favor, [VOTE AQUI](https://discord.com/channels/1277631721822748742/1277631722716008535/1281775079151239263)
+
 ## Funcionalidades
 
 - Pesquisa por soluções com base em sentimentos.
