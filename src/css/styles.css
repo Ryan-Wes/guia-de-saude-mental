@@ -2,18 +2,19 @@
 body {
     font-family: "Poppins", sans-serif;
     background-image: url(../img/fundo.jpg);
-    overflow: hidden; /* Remove barras de rolagem */
-    margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden; /* Remove barras de rolagem */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
     transition: background-color 0.3s ease;
+}
+
+main {
+    flex: 1;
 }
 
 /* Adiciona uma animação de transição suave para o fundo */
@@ -27,6 +28,7 @@ h1 {
     color: #1e1e1e; /* Cor mais suave */
     text-align: center;
     letter-spacing: 0.3rem;
+    padding-bottom: 50px;
 }
 
 /* Estiliza as seções da página */
@@ -48,30 +50,6 @@ section input {
     color: #2D3748; /* Cor do texto */
     font-size: 1rem;
     box-sizing: border-box;
-}
-
-/* Estiliza as sugestões automáticas */
-#sugestoes {
-    width: 30rem;
-    max-height: 10rem;
-    overflow-y: auto;
-    background-color: #ffffffb1;
-    border: 1px solid #CBD5E0;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 3.5rem;
-    z-index: 10;
-}
-
-/* Estiliza cada sugestão automática */
-#sugestoes div {
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-#sugestoes div:hover {
-    background-color: #ecce6e6e;
 }
 
 /* Estiliza os botões dentro das seções */
@@ -100,7 +78,7 @@ section button:hover {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 0.6rem;
-    background-color: #ffffff00; /* Fundo branco para resultados */
+    background-color: #ff000000; /* Fundo branco para resultados */
 }
 
 /* Estiliza cada item de resultado */
@@ -145,6 +123,7 @@ section button:hover {
 footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #F7FAFC;
     color: #4A5568;
     text-align: center;

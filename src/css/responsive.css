@@ -1,0 +1,53 @@
+@media (max-width: 700px) {
+    body {
+        background-image: url(../img/fundo-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 650px){
+    h1 {
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    section input {
+        width: 90%;
+    }
+
+    .resultados-pesquisa {
+        width: 550px;
+    }
+
+    footer {
+        font-size: 10px;
+
+    }
+}
+
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 190%;
+        padding-bottom: 40px;
+    }
+
+    section input {
+        width: 85%;
+    }
+
+    .resultados-pesquisa {
+        width: 370px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 392px) and (max-width: 394px) {
+    h1 {
+        font-size: 25px;
+    }
+}
