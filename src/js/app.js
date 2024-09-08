@@ -33,3 +33,10 @@ function pesquisar() {
 
     section.innerHTML = resultados;
 }
+
+document.getElementById("campo-pesquisa").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Impede o comportamento padrão (envio de formulário, por exemplo)
+        pesquisar(); // Chama a função de pesquisa
+    }
+});
