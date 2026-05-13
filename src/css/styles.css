@@ -88,7 +88,11 @@ body {
   gap: 10px;
 }
 
-.header-icon { font-size: 1.4rem; }
+.header-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
 
 .header-title {
   font-size: 1rem;
