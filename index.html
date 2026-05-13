@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia de Saúde Mental - Apoio emocional e recursos baseados em como você está se sentindo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+  <title>Guia de Saúde Mental</title>
+</head>
+
+<body>
+
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="header-icon">🧠</span>
+        <span class="header-title">Guia de Saúde Mental</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <h1>Como você está<br><span class="hero-accent">se sentindo?</span></h1>
+      <p class="hero-sub">
+        Descreva com suas próprias palavras — nossa IA entende e sugere recursos de apoio.
+      </p>
+    </section>
+
+    <section class="search-section">
+      <div class="search-box">
+        <span class="search-icon">✦</span>
+        <input
+          type="text"
+          id="campo-pesquisa"
+          placeholder="Ex: estou me sentindo sobrecarregado e sem energia..."
+          autocomplete="off"
+        />
+        <button id="btn-pesquisar" type="button">Buscar apoio</button>
+      </div>
+
+      <div class="chips">
+        <button class="chip" type="button" data-valor="ansiedade">😰 Ansiedade</button>
+        <button class="chip" type="button" data-valor="tristeza">😢 Tristeza</button>
+        <button class="chip" type="button" data-valor="estresse">😤 Estresse</button>
+        <button class="chip" type="button" data-valor="solidão">😔 Solidão</button>
+        <button class="chip" type="button" data-valor="sobrecarga">🤯 Sobrecarga</button>
+        <button class="chip" type="button" data-valor="desmotivação">😶 Desmotivação</button>
+        <button class="chip" type="button" data-valor="medo">😨 Medo</button>
+        <button class="chip" type="button" data-valor="raiva">😠 Raiva</button>
+      </div>
+    </section>
+
+    <section id="resultados-pesquisa" class="results-section" aria-live="polite"></section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Se precisar de apoio imediato, ligue <strong>188</strong> — CVV (ligação gratuita, 24h)</p>
+    <p class="footer-copy">© 2025 Guia de Saúde Mental</p>
+  </footer>
+
+  <script src="./src/js/dados.js"></script>
+  <script src="./src/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+@media (max-width: 640px) {
+  .main { padding: 36px 0 28px; }
+
+  .hero h1 { font-size: 1.75rem; }
+  .hero-sub { font-size: 0.9rem; }
+
+  .search-box {
+    padding: 6px 6px 6px 14px;
+    border-radius: 16px;
+  }
+
+  .search-box input { font-size: 0.9rem; }
+
+  #btn-pesquisar { padding: 9px 16px; font-size: 0.85rem; }
+
+  .chips { gap: 6px; }
+  .chip { padding: 6px 13px; font-size: 0.8rem; }
+
+  .item-resultado,
+  .ai-response-card { padding: 16px 18px; }
+}
