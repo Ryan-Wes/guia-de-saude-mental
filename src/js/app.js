@@ -1,6 +1,6 @@
 // Configure o webhook do n8n aqui para ativar respostas com IA.
 // O webhook deve receber { mensagem: string } e retornar { resposta: string }.
-const AI_WEBHOOK_URL = "http://localhost:8000/ia";
+const AI_WEBHOOK_URL = "https://guia-de-saude-mental-api.onrender.com";
 
 const input = document.getElementById("campo-pesquisa");
 const btnPesquisar = document.getElementById("btn-pesquisar");
